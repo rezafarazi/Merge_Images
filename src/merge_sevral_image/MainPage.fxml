@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="685.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="merge_sevral_image.MainPageController">
+   <children>
+      <JFXTextField fx:id="width_textfeild" focusColor="#1e70bc" labelFloat="true" layoutX="544.0" layoutY="50.0" maxWidth="97.0" minWidth="85.0" prefHeight="31.0" prefWidth="97.0" promptText="Width" unFocusColor="BLACK" />
+      <JFXTextField fx:id="height_textfeild" focusColor="#1e70bc" labelFloat="true" layoutX="447.0" layoutY="50.0" maxWidth="97.0" minWidth="97.0" prefHeight="31.0" prefWidth="97.0" promptText="Height" unFocusColor="BLACK" />
+      <JFXTextField fx:id="save_address_textfeild" focusColor="#1e70bc" labelFloat="true" layoutX="53.0" layoutY="50.0" maxWidth="564.0" minWidth="354.0" prefHeight="31.0" prefWidth="386.0" promptText="Save FIle Address" unFocusColor="BLACK" />
+      <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="53.0" onAction="#chosee_save_file" ripplerFill="WHITE" style="-fx-background-color: #102030; -fx-cursor: hand;" text="..." textFill="WHITE" />
+      <JFXTextField fx:id="new_image_address_textfeild" focusColor="#1e70bc" labelFloat="true" layoutX="54.0" layoutY="99.0" maxWidth="586.0" minWidth="354.0" prefHeight="31.0" prefWidth="586.0" promptText="New Image File" unFocusColor="BLACK" />
+      <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="102.0" onAction="#chosee_new_file" ripplerFill="WHITE" style="-fx-background-color: #102030; -fx-cursor: hand;" text="+" textFill="WHITE" />
+      <VBox fx:id="new_address_list" layoutX="53.0" layoutY="145.0" prefHeight="285.0" prefWidth="586.0" />
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="440.0" onAction="#on_click_render" prefHeight="25.0" prefWidth="586.0" ripplerFill="WHITE" style="-fx-background-color: #102030; -fx-cursor: hand;" text="Render" textFill="WHITE" />
+   </children>
+</AnchorPane>
